@@ -1,0 +1,93 @@
+# Kronyx Engines .gitignore template
+# Based on Bevy engine (Rust), Blender assets, and general project needs
+
+# === Rust build ===
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# === Rust IDE files ===
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# === Bevy specific ===
+/assets/.DS_Store
+/assets/**/Thumbs.db
+/assets/**/.DS_Store
+
+# === Build output and intermediate files ===
+/build/
+/bin/
+/out/
+
+# === Blender cache and temp files ===
+*.blend1
+*.blend2
+*.blend_backup
+*.blend@
+*.tmp
+*.bak
+*.blend@_*
+
+# === OS generated files ===
+.DS_Store
+Thumbs.db
+
+# === Logs ===
+*.log
+
+# === User-specific files ===
+*.user
+*.suo
+
+# === Misc ===
+*.exe
+*.dll
+*.pdb
+*.obj
+*.ilk
+*.lib
+*.class
+*.jar
+*.pyc
+*.pyo
+*.orig
+*.py[cod]
+
+# === Unity, Unreal, Godot (if you ever integrate) ===
+# Ignore if you use those engines at some point
+# /Library/
+# /DerivedDataCache/
+# /Intermediate/
+# /Saved/
+# *.uproject
+
+# === Temporary files ===
+*.tmp
+*.temp
+
+# === Coverage reports ===
+/coverage/
+
+# === Documentation builds ===
+/docs/_build/
+
+# === IDE specific ===
+*.code-workspace
+
+# === Node.js (if you use npm/yarn in tools) ===
+node_modules/
+
+# === Environment files ===
+.env
+.env.local
+
+# === Backup files ===
+*~
+
+# === Lock files other than Cargo.lock ===
+package-lock.json
+yarn.lock
+
